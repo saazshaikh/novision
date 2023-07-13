@@ -51,8 +51,8 @@
 		1BD11C8D2A5F0AE20049BBF5 /* Novision */ = {
 			isa = PBXGroup;
 			children = (
-				1BD11C8E2A5F0AE20049BBF5 /* NovisionApp.swift */,
 				1BD11C902A5F0AE20049BBF5 /* ContentView.swift */,
+				1BD11C8E2A5F0AE20049BBF5 /* NovisionApp.swift */,
 				1BD11C922A5F0AE30049BBF5 /* Assets.xcassets */,
 				1BD11C942A5F0AE30049BBF5 /* Preview Content */,
 			);
