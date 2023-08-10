@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B5DA48A2A83EAD500D495DA /* DontRemindMeWhenUsingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DA4892A83EAD500D495DA /* DontRemindMeWhenUsingView.swift */; };
+		1B5DA48C2A84229800D495DA /* AppsAndInUseApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DA48B2A84229800D495DA /* AppsAndInUseApps.swift */; };
+		1B5DA4932A84C14600D495DA /* HomeScreenPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DA4922A84C14600D495DA /* HomeScreenPageView.swift */; };
+		1BCBB96F2A825DED00AF8725 /* IntroductionPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCBB96E2A825DED00AF8725 /* IntroductionPageView.swift */; };
+		1BCBB9712A82621D00AF8725 /* SetUpPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCBB9702A82621D00AF8725 /* SetUpPageView.swift */; };
+		1BCBB9762A828F7800AF8725 /* NovisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCBB9752A828F7800AF8725 /* NovisionManager.swift */; };
+		1BCBB97A2A82BBEF00AF8725 /* ReminderTimesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCBB9792A82BBEF00AF8725 /* ReminderTimesView.swift */; };
 		1BD11C8F2A5F0AE20049BBF5 /* NovisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD11C8E2A5F0AE20049BBF5 /* NovisionApp.swift */; };
 		1BD11C912A5F0AE20049BBF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD11C902A5F0AE20049BBF5 /* ContentView.swift */; };
 		1BD11C932A5F0AE30049BBF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BD11C922A5F0AE30049BBF5 /* Assets.xcassets */; };
@@ -14,6 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B5DA4892A83EAD500D495DA /* DontRemindMeWhenUsingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DontRemindMeWhenUsingView.swift; sourceTree = "<group>"; };
+		1B5DA48B2A84229800D495DA /* AppsAndInUseApps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsAndInUseApps.swift; sourceTree = "<group>"; };
+		1B5DA4922A84C14600D495DA /* HomeScreenPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPageView.swift; sourceTree = "<group>"; };
+		1BCBB96E2A825DED00AF8725 /* IntroductionPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionPageView.swift; sourceTree = "<group>"; };
+		1BCBB9702A82621D00AF8725 /* SetUpPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpPageView.swift; sourceTree = "<group>"; };
+		1BCBB9742A8266BB00AF8725 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1BCBB9752A828F7800AF8725 /* NovisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovisionManager.swift; sourceTree = "<group>"; };
+		1BCBB9792A82BBEF00AF8725 /* ReminderTimesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderTimesView.swift; sourceTree = "<group>"; };
 		1BD11C8B2A5F0AE20049BBF5 /* Novision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Novision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD11C8E2A5F0AE20049BBF5 /* NovisionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovisionApp.swift; sourceTree = "<group>"; };
 		1BD11C902A5F0AE20049BBF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +47,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B5DA48F2A84C05D00D495DA /* SetUpPageGroup */ = {
+			isa = PBXGroup;
+			children = (
+				1BCBB9702A82621D00AF8725 /* SetUpPageView.swift */,
+				1BCBB9792A82BBEF00AF8725 /* ReminderTimesView.swift */,
+				1B5DA4892A83EAD500D495DA /* DontRemindMeWhenUsingView.swift */,
+			);
+			path = SetUpPageGroup;
+			sourceTree = "<group>";
+		};
+		1B5DA4912A84C10700D495DA /* HomeScreenPageGroup */ = {
+			isa = PBXGroup;
+			children = (
+				1B5DA4922A84C14600D495DA /* HomeScreenPageView.swift */,
+			);
+			path = HomeScreenPageGroup;
+			sourceTree = "<group>";
+		};
+		1BCBB96C2A825D8A00AF8725 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1BCBB96E2A825DED00AF8725 /* IntroductionPageView.swift */,
+				1B5DA48F2A84C05D00D495DA /* SetUpPageGroup */,
+				1B5DA4912A84C10700D495DA /* HomeScreenPageGroup */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1BCBB96D2A825DAE00AF8725 /* Model and ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1BCBB9752A828F7800AF8725 /* NovisionManager.swift */,
+				1B5DA48B2A84229800D495DA /* AppsAndInUseApps.swift */,
+			);
+			path = "Model and ViewModel";
+			sourceTree = "<group>";
+		};
 		1BD11C822A5F0AE20049BBF5 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +103,12 @@
 		1BD11C8D2A5F0AE20049BBF5 /* Novision */ = {
 			isa = PBXGroup;
 			children = (
+				1BCBB9742A8266BB00AF8725 /* GoogleService-Info.plist */,
 				1BD11C902A5F0AE20049BBF5 /* ContentView.swift */,
-				1BD11C8E2A5F0AE20049BBF5 /* NovisionApp.swift */,
+				1BCBB96D2A825DAE00AF8725 /* Model and ViewModel */,
+				1BCBB96C2A825D8A00AF8725 /* View */,
 				1BD11C922A5F0AE30049BBF5 /* Assets.xcassets */,
+				1BD11C8E2A5F0AE20049BBF5 /* NovisionApp.swift */,
 				1BD11C942A5F0AE30049BBF5 /* Preview Content */,
 			);
 			path = Novision;
@@ -137,7 +192,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B5DA48C2A84229800D495DA /* AppsAndInUseApps.swift in Sources */,
 				1BD11C912A5F0AE20049BBF5 /* ContentView.swift in Sources */,
+				1B5DA48A2A83EAD500D495DA /* DontRemindMeWhenUsingView.swift in Sources */,
+				1BCBB97A2A82BBEF00AF8725 /* ReminderTimesView.swift in Sources */,
+				1BCBB96F2A825DED00AF8725 /* IntroductionPageView.swift in Sources */,
+				1B5DA4932A84C14600D495DA /* HomeScreenPageView.swift in Sources */,
+				1BCBB9762A828F7800AF8725 /* NovisionManager.swift in Sources */,
+				1BCBB9712A82621D00AF8725 /* SetUpPageView.swift in Sources */,
 				1BD11C8F2A5F0AE20049BBF5 /* NovisionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
