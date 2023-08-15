@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct IntroductionPageView: View {
-    
+    @ObservedObject var novisionManager: NovisionManager
     @State private var isSetUpPagePresented = false
+    @State private var isSignUpPagePresented = false
+    @State private var isSignInPagePresented = false
     
     struct CustomColor {
         static let navyBlue = Color("navyBlue")
@@ -55,6 +57,7 @@ struct IntroductionPageView: View {
                     
                     Button {
                         print("sign uped")
+                        isSignUpPagePresented = true
                     } label: {
                         Text("Sign up 🫡         ")
                             .padding(10)
@@ -64,9 +67,13 @@ struct IntroductionPageView: View {
                      .cornerRadius(30)
                      .shadow(radius: 7)
                      .offset(x: -90, y: 90)
+                     .fullScreenCover(isPresented: $isSignUpPagePresented) {
+                         SignUpPageView(novisionManager: NovisionManager())
+                     }
                     
                     Button {
                         print("logged in")
+                        isSignInPagePresented = true
                     } label: {
                         Text("Sign in 😆           ")
                             .padding(10)
@@ -76,6 +83,9 @@ struct IntroductionPageView: View {
                      .cornerRadius(30)
                      .shadow(radius: 7)
                      .offset(x: 90, y: 37)
+                     .fullScreenCover(isPresented: $isSignInPagePresented) {
+                         SignInPageView(novisionManager: NovisionManager())
+                     }
                     
                     Button {
                         print ("skipped sign in")
@@ -100,6 +110,6 @@ struct IntroductionPageView: View {
 
 struct IntroductionPageView_Previews: PreviewProvider {
     static var previews: some View {
-        IntroductionPageView()
+        IntroductionPageView(novisionManager: NovisionManager())
     }
 }

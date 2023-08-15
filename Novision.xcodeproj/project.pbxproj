@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B12F0352A8BF02300BC9F02 /* example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B12F0342A8BF02300BC9F02 /* example.swift */; };
+		1B420AFA2A8A9F550018CFF9 /* GoBackToSignUpPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B420AF92A8A9F550018CFF9 /* GoBackToSignUpPageView.swift */; };
 		1B5DA48A2A83EAD500D495DA /* DontRemindMeWhenUsingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DA4892A83EAD500D495DA /* DontRemindMeWhenUsingView.swift */; };
 		1B5DA48C2A84229800D495DA /* AppsAndInUseApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DA48B2A84229800D495DA /* AppsAndInUseApps.swift */; };
 		1B5DA4932A84C14600D495DA /* HomeScreenPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DA4922A84C14600D495DA /* HomeScreenPageView.swift */; };
+		1BA96EAA2A88FD730039F46C /* SignUpPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA96EA92A88FD730039F46C /* SignUpPageView.swift */; };
+		1BA96EAC2A892B1B0039F46C /* ContinueWithWhatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA96EAB2A892B1B0039F46C /* ContinueWithWhatView.swift */; };
+		1BA96EAE2A892BFC0039F46C /* SignInPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA96EAD2A892BFC0039F46C /* SignInPageView.swift */; };
 		1BCBB96F2A825DED00AF8725 /* IntroductionPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCBB96E2A825DED00AF8725 /* IntroductionPageView.swift */; };
 		1BCBB9712A82621D00AF8725 /* SetUpPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCBB9702A82621D00AF8725 /* SetUpPageView.swift */; };
 		1BCBB9762A828F7800AF8725 /* NovisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCBB9752A828F7800AF8725 /* NovisionManager.swift */; };
@@ -21,9 +26,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B12F0342A8BF02300BC9F02 /* example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = example.swift; sourceTree = "<group>"; };
+		1B420AF92A8A9F550018CFF9 /* GoBackToSignUpPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoBackToSignUpPageView.swift; sourceTree = "<group>"; };
 		1B5DA4892A83EAD500D495DA /* DontRemindMeWhenUsingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DontRemindMeWhenUsingView.swift; sourceTree = "<group>"; };
 		1B5DA48B2A84229800D495DA /* AppsAndInUseApps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsAndInUseApps.swift; sourceTree = "<group>"; };
 		1B5DA4922A84C14600D495DA /* HomeScreenPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPageView.swift; sourceTree = "<group>"; };
+		1BA96EA92A88FD730039F46C /* SignUpPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpPageView.swift; path = ../SetUpPageGroup/SignUpPageView.swift; sourceTree = "<group>"; };
+		1BA96EAB2A892B1B0039F46C /* ContinueWithWhatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueWithWhatView.swift; sourceTree = "<group>"; };
+		1BA96EAD2A892BFC0039F46C /* SignInPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPageView.swift; sourceTree = "<group>"; };
 		1BCBB96E2A825DED00AF8725 /* IntroductionPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionPageView.swift; sourceTree = "<group>"; };
 		1BCBB9702A82621D00AF8725 /* SetUpPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpPageView.swift; sourceTree = "<group>"; };
 		1BCBB9742A8266BB00AF8725 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -65,10 +75,23 @@
 			path = HomeScreenPageGroup;
 			sourceTree = "<group>";
 		};
+		1B9731B02A853267009D745D /* SignUpAndSignInPagesGroup */ = {
+			isa = PBXGroup;
+			children = (
+				1BA96EA92A88FD730039F46C /* SignUpPageView.swift */,
+				1BA96EAD2A892BFC0039F46C /* SignInPageView.swift */,
+				1BA96EAB2A892B1B0039F46C /* ContinueWithWhatView.swift */,
+				1B420AF92A8A9F550018CFF9 /* GoBackToSignUpPageView.swift */,
+				1B12F0342A8BF02300BC9F02 /* example.swift */,
+			);
+			path = SignUpAndSignInPagesGroup;
+			sourceTree = "<group>";
+		};
 		1BCBB96C2A825D8A00AF8725 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				1BCBB96E2A825DED00AF8725 /* IntroductionPageView.swift */,
+				1B9731B02A853267009D745D /* SignUpAndSignInPagesGroup */,
 				1B5DA48F2A84C05D00D495DA /* SetUpPageGroup */,
 				1B5DA4912A84C10700D495DA /* HomeScreenPageGroup */,
 			);
@@ -87,6 +110,7 @@
 		1BD11C822A5F0AE20049BBF5 = {
 			isa = PBXGroup;
 			children = (
+				1BCBB9742A8266BB00AF8725 /* GoogleService-Info.plist */,
 				1BD11C8D2A5F0AE20049BBF5 /* Novision */,
 				1BD11C8C2A5F0AE20049BBF5 /* Products */,
 			);
@@ -103,7 +127,6 @@
 		1BD11C8D2A5F0AE20049BBF5 /* Novision */ = {
 			isa = PBXGroup;
 			children = (
-				1BCBB9742A8266BB00AF8725 /* GoogleService-Info.plist */,
 				1BD11C902A5F0AE20049BBF5 /* ContentView.swift */,
 				1BCBB96D2A825DAE00AF8725 /* Model and ViewModel */,
 				1BCBB96C2A825D8A00AF8725 /* View */,
@@ -138,6 +161,8 @@
 			dependencies = (
 			);
 			name = Novision;
+			packageProductDependencies = (
+			);
 			productName = Novision;
 			productReference = 1BD11C8B2A5F0AE20049BBF5 /* Novision.app */;
 			productType = "com.apple.product-type.application";
@@ -166,6 +191,8 @@
 				Base,
 			);
 			mainGroup = 1BD11C822A5F0AE20049BBF5;
+			packageReferences = (
+			);
 			productRefGroup = 1BD11C8C2A5F0AE20049BBF5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -192,15 +219,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B12F0352A8BF02300BC9F02 /* example.swift in Sources */,
 				1B5DA48C2A84229800D495DA /* AppsAndInUseApps.swift in Sources */,
+				1B420AFA2A8A9F550018CFF9 /* GoBackToSignUpPageView.swift in Sources */,
 				1BD11C912A5F0AE20049BBF5 /* ContentView.swift in Sources */,
 				1B5DA48A2A83EAD500D495DA /* DontRemindMeWhenUsingView.swift in Sources */,
 				1BCBB97A2A82BBEF00AF8725 /* ReminderTimesView.swift in Sources */,
 				1BCBB96F2A825DED00AF8725 /* IntroductionPageView.swift in Sources */,
 				1B5DA4932A84C14600D495DA /* HomeScreenPageView.swift in Sources */,
 				1BCBB9762A828F7800AF8725 /* NovisionManager.swift in Sources */,
+				1BA96EAA2A88FD730039F46C /* SignUpPageView.swift in Sources */,
 				1BCBB9712A82621D00AF8725 /* SetUpPageView.swift in Sources */,
 				1BD11C8F2A5F0AE20049BBF5 /* NovisionApp.swift in Sources */,
+				1BA96EAC2A892B1B0039F46C /* ContinueWithWhatView.swift in Sources */,
+				1BA96EAE2A892BFC0039F46C /* SignInPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

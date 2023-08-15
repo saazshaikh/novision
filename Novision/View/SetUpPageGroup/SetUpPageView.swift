@@ -75,15 +75,16 @@ struct SetUpPage: View {
                 print("set up completed-- heading to main screen")
                 isHomeScreenPresented = true
             }label: {
-                Text("next                     ")
+                Text("Next")
+                    .font(.system(size: 20))
+                    .frame(width: 320, height: 22)
                     .bold()
                     .padding()
-                    .foregroundColor(CustomColor.navyBlue)
-                    .background(Color.white)
-                    .cornerRadius(30)
+                    .foregroundColor(.white)
+                    .background(Color.blue)
+                    .cornerRadius(10)
             }
             .offset(y: 325)
-            .shadow(color: CustomColor.richRed, radius: 30, x: 0, y: 2)
             .fullScreenCover(isPresented: $isHomeScreenPresented) {
                 HomeScreenPageView()
             }

@@ -8,6 +8,7 @@ import SwiftUI
 
 @main
 struct NovisionAppApp: App {
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
